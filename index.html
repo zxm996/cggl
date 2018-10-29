@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>管理首页</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<section class="section" id="apply">
+	<div class="apply"  v-for="item in apply">
+		<a v-bind:href="item.url">
+			<img class="applyimg" v-bind:src="item.imgurl">
+			<div class="name">{{item.name}}</div>
+		</a>
+	</div>
+</section>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vue.min.js"></script>
+<script>
+new Vue({
+  el: '#apply',
+  data: {
+    apply: [
+      { 
+      	url: 'login.html',
+      	imgurl: 'image/icon/yhj2.png',
+      	name: '优惠券管理'
+      },
+      { 
+      	url: 'login.html',
+      	imgurl: 'image/icon/ddgl.png',
+      	name: '订单管理'
+      },
+      { 
+      	url: 'productcontrol/home.html',
+      	imgurl: 'image/icon/cpgl.png',
+      	name: '产品管理'
+      },
+      { 
+      	url: 'login.html',
+      	imgurl: 'image/icon/shfw.png',
+      	name: '售后管理'
+      }
+    ]
+  }
+})
+</script>
+</body>
+</html>

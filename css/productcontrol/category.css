@@ -1,0 +1,176 @@
+
+body {
+	margin: 0;
+	padding: 0;
+}
+a:link ,
+a:visited ,
+a:hover,
+a:active{
+	color: #333;
+	text-decoration: none;
+}
+header {
+	height: 4em;
+	border-bottom: 1px #e5e5e5 solid;
+	line-height: 4em;
+	text-align: center;
+	font-size: 2em
+}
+header > img {
+	width: 2em;
+	height: 2em;
+	margin: 1em auto;
+	display: block;
+	display: inline-block;
+}
+header > span {
+
+	display: inline-block;
+}
+
+.content {
+	margin-top: 50px;
+	padding: 0 150px;
+}
+.list {
+	display: flex;
+	height: 60px;
+}
+.list > .title {
+	line-height: 60px;
+	font-size: 18px;
+	width: 20%;
+	text-align: center;
+	padding-right: 15px;
+}	
+.list > .input1 {
+	width: 80%;
+	height: 40px;
+	margin-top: 10px;
+}
+.list > .select1 {
+	width: 80%;
+	height: 40px;
+	margin-top: 10px;
+	color: #666;
+}
+
+/*add*/
+.con_box {
+	padding: 0 30px;
+	margin-top: 20px;
+	display: flex;
+	width: 100%;
+	flex-wrap:  wrap; 
+}
+.con_box > .addbtn {
+	margin: 1%;
+	width: 23%;
+	height: 10em;
+	border: 2px #e5e5e5 dashed;
+	border-radius: 5px;
+}
+.con_box > .addbtn a > img {
+	width: 4em;
+	height: 4em;
+	display: block;
+	margin: 0 auto;
+	margin-top: 3em;
+}
+.addcon1 {
+	background-color: #ff0;
+	position: relative;
+	width: 23%;
+	height: 10em;
+	margin: 1%;
+}
+.addcon1 > .addimg {
+	width: 100%;
+	height: 100%;
+}
+.addcon1 > .bottext {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(255,255,255,.4);
+	color: #fff;
+	text-align: center;
+	line-height: 1.5;
+}
+.addcon1 > .delimg {
+	width: 2.5em;
+	height: 2.5em;
+	position: absolute;
+	top: -.5em;
+	right: -.5em;
+	cursor: pointer;
+}
+
+.submitbtn {
+	width: 80%;
+	display: block;
+	margin: 50px auto;
+	font-size: 20px;
+}
+
+@media (max-width: 700px) {
+
+	header {
+		height: 3em;
+		line-height: 3em;
+		font-size: 1.3em;
+	}
+	header > img {
+		width: 1.5em;
+		height: 1.5em;
+		margin: .5em auto;
+	}
+	.content {
+		width: 100%;
+		padding: 0 25px;
+		margin-top: 20px;
+	}
+	.list > .title {
+		font-size: 16px;
+		width: 30%;
+		padding-right: 5px;
+	}	
+	.list > .input1 {
+		width: 70%;
+	}
+	.list > .select1 {
+		width: 70%;
+	}
+
+	/*add*/
+	.con_box {
+		padding: 0 5px;
+		margin-top: 10px;
+	}
+	.con_box > .addbtn {
+		width: 23%;
+		height: 6em;
+	}
+	.con_box > .addbtn a > img {
+		width: 2em;
+		height: 2em;
+		margin-top: 2em;
+	}
+	.addcon1 {
+		height: 6em;
+	}
+
+	.addcon1 > .delimg {
+		width: 1.5em;
+		height: 1.5em;
+		position: absolute;
+		top: -.3em;
+		right: -.3em;
+	}
+	
+	.submitbtn {
+		font-size: 16px;
+	}
+} 

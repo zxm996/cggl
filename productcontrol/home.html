@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>商品模块1</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/productcontrol/home.css">
+</head>
+<body>
+
+<header class="container">
+	<img src="../image/icon/cc.png" alt="">
+	<span>商品内容</span>
+</header>
+
+<!-- 产品信息、 -->
+<section class="container">	
+	<div class="row" id="listcon">
+		<div class="list_box col-md-12 col-xs-12" v-for="item in list">
+			<img class="list_img" v-bind:src="item.imgurl" alt="">
+			<div class="con_box">
+				<div class="name">{{item.name}}</div>
+
+				<div class="text">{{item.text}}</div>
+				<div class="style">商品样式1</div>
+
+			</div>
+			<div class="list_btn">
+				<div class="editor"><a href="../productcontrol/addproduct.html">编辑</a></div>
+				<div class="del"><a href="javascript:;">删除</a></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- add -->
+<div class="add">
+	<a href="../productcontrol/category.html">
+		<img src="../image/icon/jia.png" alt="">
+	</a>
+</div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/vue.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+	new Vue({
+		el: "#listcon",
+		data: {
+			list: [
+				{
+					imgurl: '../image/tu2.jpg',
+					name: '红茶',
+					text: '氨基酸等会看空间哈时间肯定会滑块撒娇回答客家话科技氨基酸等会看空间哈时间肯定会滑块撒娇回答客家话科技氨基酸等会看空间哈时间肯定会滑块撒娇回答客家话科技'
+				},
+				{
+					imgurl: '../image/tu2.jpg',
+					name: '红茶',
+					text: '氨基酸会滑块撒娇回答客家话科技'
+				}
+			]
+		}
+		
+		
+	})
+</script>
+</body>
+</html>

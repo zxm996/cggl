@@ -1,0 +1,43 @@
+
+.menu{
+	width: 30%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10%;
+}
+.menu > h2{
+	text-align: center;
+}
+.menu > .form {
+	margin-top: 50px;
+}
+.menu > .form > .login {
+	display: flex;
+	margin: 20px 0;
+}
+.menu > .form > .login > label {
+	line-height: 40px;
+}
+.menu > .form > .login > .input1 {
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+	height: 40px;
+}
+.menu > .form > .href {
+	text-align: center;
+}
+.menu > .form > .btn {
+	width: 100%;
+	margin-top: 30px;
+}
+
+@media (max-width: 1000px) {
+	.menu{
+		width: 90%;
+		margin-top: 35%;
+	}
+	.menu > .form > .login > .input1 {
+		width: 80%;
+	}
+}

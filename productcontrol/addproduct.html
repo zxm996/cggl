@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<title>添加产品</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/productcontrol/addproduct.css">
+</head>
+<body>
+<!-- header -->
+<header class="container">
+	<img src="../image/icon/cpgl.png" alt="">
+	<span>添加商品</span>
+</header>
+
+<!-- 内容 -->
+<section class="section container">
+	<form action="">
+		<div class="list">
+			<div class="title">样式板块：</div>
+			<!-- <input class="input1 form-control" type="text" placeholder="请输入商品名称" required="required"> -->
+			<select class="input1 form-control"  name="select">
+				<option class="option" value="1">商品样式1</option>
+				<option value="2">商品样式2</option>
+				<option value="3">商品样式3</option>
+			</select>
+		</div>
+		<div class="list">
+			<div class="title">商品名称：</div>
+			<input class="input1 form-control" type="text" placeholder="请输入商品名称" required="required">
+		</div>
+		<div class="list list2">
+			<div class="title">商品原价：</div>
+			<input class="input1 form-control" type="text" placeholder="0">
+			<span>元</span>
+		</div>
+		<div class="list list2">
+			<div class="title">商品售价：</div>
+			<input class="input1 form-control" type="text" placeholder="0">
+			<span>元</span>
+		</div>
+
+
+		<div class="list">
+			<div class="title">商品介绍：</div>
+			<textarea placeholder="请输入商品介绍" class="textarea1 form-control" rows="3" required="required"></textarea> 
+		</div>
+		<div class="list list4">
+			<div class="title">上传图片：</div>
+		</div>
+		<div class="imgupload">
+			<button class="upbtn" >
+				<img src="../image/icon/pic.png" alt="">
+				<p class="text">(最多上传三张图片)</p>
+			</button>
+			
+			<div class="imgurl1">
+				<img class="imgcon" src="../image/icon/pic.png" alt="">
+				<img class="del" src="../image/icon/sb.png" alt="">
+			</div>
+			<div class="imgurl1">
+				<img class="imgcon" src="../image/icon/pic.png" alt="">
+				<img class="del" src="../image/icon/sb.png" alt="">
+			</div>
+			<div class="imgurl1">
+				<img class="imgcon" src="../image/icon/pic.png" alt="">
+				<img class="del" src="../image/icon/sb.png" alt="">
+			</div>
+		</div>
+
+
+		<!-- 商品详情长图上传 -->
+		<div class="list5">
+			<div class="title">商品详情长图上传：</div>
+		</div>
+		<div class="imgupload2">
+			<button style="display: none;" type="" class="btn btn-primary">点击上传图片</button>
+			<img class="img2" src="../image/ct.jpg" alt="商品详情长图">
+		</div>
+		
+		<!-- 是否要放置到首页轮播 -->
+		<div class="list list3">
+			<div class="title">放置到轮播：</div>
+			<div class="right">
+				<input class="radiobtn" type="radio" name="radiobrn" value="是">
+				<span>是</span>
+				<input class="radiobtn" type="radio" name="radiobrn" value="否" checked="checked">
+				<span>否</span>
+			</div>
+		</div>
+
+
+		<input class="submit btn btn-primary" type="submit" value="确认添加">
+	</form>
+</section>
+
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/vue.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
